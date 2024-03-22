@@ -27,6 +27,7 @@ public class BallShooter : MonoBehaviour
             go.transform.parent = null;
             go.GetComponent<Rigidbody>().AddForce(new Vector3(0, 0, -1) * force);
             lastFired = now;
+            Destroy(go, 5);
         }
     }
 }
